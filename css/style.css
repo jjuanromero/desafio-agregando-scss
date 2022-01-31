@@ -1,0 +1,119 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+:root{
+    --size-textos: 30px;
+    --font-textos: 'Open Sans', sans-serif; 
+    --size-titulos: 80px;
+    --font-titulos: 'Bebas Neue', cursive;
+    --style-titulos: italic;
+}
+
+
+.header-logo {
+    width: 320px;
+    height: 120px;
+}
+header { background-color: black;
+
+}
+
+li a:hover {
+    background-color: rgb(158, 158, 158);
+  }
+/* Fin nav bar */
+
+#acerca-de-mi {
+    float: right;
+    background-image: url("imagenes/fondo-degradado-1.png");
+    height: auto;
+    padding: 10px;
+}
+.texto-titulo {
+    color: white;
+    text-shadow: 1px 1px 2px rgb(98, 98, 98);
+    text-align: center;
+    font-family: var(--font-titulos);
+    font-style: var(--style-titulos);
+    font-size: var(--size-titulos);
+
+}
+.img-text-container {
+    display: flex;
+}
+@media screen and (max-width:648px) {
+    .imagen-papa {
+        display: none;
+    }
+}
+.texto-descripcion {
+    padding: 10px;
+    font-size: var(--size-textos);
+    color: white;
+    font-family: var(--font-textos);
+
+}
+/* FIN INFORMACION */
+
+
+/* Representaciones */
+#representaciones {
+    background: linear-gradient(rgb(230, 230, 230), rgb(187, 187, 187));
+}
+.carousel { 
+    width: 35%;
+    height: 35%;
+    align-items: center;
+
+}
+/* Fin representaciones */
+#zona-comercial  {
+   background: linear-gradient(rgb(184, 26, 246), rgb(89, 154, 207));
+    font-size: var(--size-titulos);
+    font-family: var(--font-titulos);
+    font-style: italic;
+    color: white;
+    text-shadow: rgb(98, 98, 98);
+    text-align: center;
+}
+.zonas-container  {
+display: flex;
+}
+.black {
+    color: black;
+}
+/* Logistica */
+#logistica {
+    background-color: white;
+    height: auto;
+}
+.negro {
+    text-align: center;
+    color: black;
+   font-size: var(--size-titulos);
+    font-family: var(--font-titulos);
+    font-style: var(--style-titulos)
+}
+.parrafo-descriptivo-dos {
+    display: flex;
+    align-items: left;
+    flex-wrap: wrap;
+    font-size: var(--size-textos);
+    font-family: var(--font-textos);
+}
+/* fin logistica */
+
+/* Contacto */
+
+
+
+/* item fixed wpp */
+.item-fixed {
+
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    }
+/* footer */
