@@ -1,3 +1,4 @@
+/*nesting*/
 * {
     margin: 0%;
     padding: 0%;
@@ -11,23 +12,22 @@
     --style-titulos: italic;
 }
 
-
-.header-logo {
-    width: 320px;
-    height: 120px;
+header {
+  background-color: black;
 }
-header { background-color: black;
-
+header img {
+  width: 320px;
+  height: 120px;
 }
 
 li a:hover {
-    background-color: rgb(158, 158, 158);
-  }
+  background-color: #9e9e9e;
+}
 /* Fin nav bar */
 
 #acerca-de-mi {
     float: right;
-    background-image: url("imagenes/fondo-degradado-1.png");
+    background: linear-gradient(rgb(216, 83, 205), rgb(74, 180, 230));
     height: auto;
     padding: 10px;
 }
@@ -117,3 +117,19 @@ display: flex;
     right: 0;
     }
 /* footer */
+
+
+
+
+
+
+
+
+
+/*# sourceMappingURL=style.css.map */
+
+
+
+
+
+

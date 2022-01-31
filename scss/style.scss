@@ -1,0 +1,46 @@
+/*nesting*/
+
+header { background-color: black;
+    img { width: 320px;
+        height: 120px;
+
+    }
+}
+li a:hover {
+    background-color: rgb(158, 158, 158);
+  }
+
+#acerca-de-mi {
+    h2 {  }
+
+    div {
+        img {}
+        p {
+
+        }
+    }
+
+}
+
+#representaciones {
+    h2 {}
+
+}
+
+#zona-comercial {
+    h2 {}
+    div {
+        img {}
+        p {}
+    }
+    div {
+        img {}
+        p {}
+    }
+    div {
+        img {}
+        p {}
+    }
+    
+}
+
