@@ -63,8 +63,8 @@ li a:hover {
     background: linear-gradient(rgb(230, 230, 230), rgb(187, 187, 187));
 }
 .carousel { 
-    width: 35%;
-    height: 35%;
+    width: auto;
+    height: auto;
     align-items: center;
 
 }
