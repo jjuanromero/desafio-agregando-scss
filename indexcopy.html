@@ -13,6 +13,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link to animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    <!-- CSS -->
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -74,7 +76,7 @@
   <h2 class="texto-titulo">Acerca de mi</h2>
 <div class="img-text-container">
     <img src="imagenes/foto-para-papa-2.png" 
-alt="Imagen de Sergio Romero" class="imagen-papa">
+alt="Imagen de Sergio Romero" class="imagen-papa ">
 <p class="texto-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
     Dolores eaque praesentium esse sunt facere sapiente exercitationem 
 quis fugiat maiores. Repellat totam quam perspiciatis a ducimus ab. Quas quam earum ipsam.</p>
@@ -84,9 +86,10 @@ quis fugiat maiores. Repellat totam quam perspiciatis a ducimus ab. Quas quam ea
 
 <!-- Representaciones -->
 <section id="representaciones"> 
-  <h2 class="texto-titulo">Representaciones</h2>  
+  <h2 class="texto-titulo negro">Representaciones</h2>  
   <div class="carousel-item active">
     <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
+    </div>
 
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
@@ -126,7 +129,7 @@ quis fugiat maiores. Repellat totam quam perspiciatis a ducimus ab. Quas quam ea
         <span class="visually-hidden">Next</span>
       </button>
     </div>
- 
+</section>
   
   <!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -186,19 +189,19 @@ quis fugiat maiores. Repellat totam quam perspiciatis a ducimus ab. Quas quam ea
 <section id="zona-comercial">  
   <h2 class="texto-titulo">Zona Comercial</h2>
 <div class="flex-container">
-    <div><img src="imagenes/salta zona.png" alt="Mapa salta"width="300" height="300">
+    <div><img src="imagenes/salta zona.png" alt="Mapa salta" class="img-zona">
     <p class="texto-descripcion black">Capital,Rosario de la 
     frontera , Metan , Pichanal, Orán,Tartagal y Salvador Maza</p></div>
 
-    <div><img src="imagenes/tucuman zona.png" alt="Mapa tucuman"width="300" height="300">
+    <div><img src="imagenes/tucuman zona.png" alt="Mapa tucuman" class="img-zona">
     <p class="texto-descripcion black">San Miguel de Tucuman,
     Banda Río Salí,Concepcion, Monteros,Aguilares, Lules y Famaillá</p></div>
 
-    <div><img src="imagenes/jujuy zona.png" alt="Mapa jujuy"width="300" height="300">
+    <div><img src="imagenes/jujuy zona.png" alt="Mapa jujuy" class="img-zona">
     <p class="texto-descripcion black">San Salvador de Jujuy,
     Palpalá,San Pedro  y Libertador San Martin </p></div>
 
-    <div><img src="imagenes/sgo del estero zona.png" alt="Mapa santiago del estero"width="300" height="300">
+    <div><img src="imagenes/sgo del estero zona.png" alt="Mapa santiago del estero" class="img-zona">
     <p class="texto-descripcion black">Santiago del Estero,La Banda y Termas de Río Hondo</p></div>
 </div>
 </section>
@@ -208,13 +211,16 @@ quis fugiat maiores. Repellat totam quam perspiciatis a ducimus ab. Quas quam ea
 <!-- Logistica -->
 <section id="logistica"> <h2 class="negro">Logistica</h2>
 <div class="parrafo-descriptivo-dos">
-    <div><img src="imagenes/logo camion.png" alt="logo camion"width="50" height="50"><p>Lorem ipsum, dolor sit amet consectetur 
+  <div data-aos="zoom-in">
+  <div><img src="imagenes/truck.svg" alt="logo camion"width="50" height="50"><p>Lorem ipsum, dolor sit amet consectetur 
 adipisicing elit. Repudiandae dignissimos dolorem nostrum non quo iste molestias amet ratione ab, 
 numquam consequuntur earum quam suscipit, cupiditate recusandae cum blanditiis modi sequi.</p></div>
-
-<div><img src="imagenes/logo plata.png" alt="logo dinero"width="50" height="50">Lorem ipsum dolor sit amet, consectetur 
+</div>
+<div data-aos="zoom-in">
+<div><img src="imagenes/cash-coin.svg" alt="logo dinero"width="50" height="50">Lorem ipsum dolor sit amet, consectetur 
 adipisicing elit. Error commodi atque quae incidunt utullam veniam dolorem ab quia earum accusantium consequatur distinctio voluptatem 
 in exercitationem, non deserunt fugiat est?</div>
+</div>
 </div>
 
 </section>
@@ -224,16 +230,26 @@ in exercitationem, non deserunt fugiat est?</div>
 <section id="contacto"><!--Acá ira un formulario y una opcion de mandar mensaje-->
 <h2 class="negro">Contacto</h2>
 
+
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" >
+</div>
 <div class="mb-3">
   <label for="exampleFormControlInput1" class="form-label">Email address</label>
   <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Numero</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" >
 </div>
 <div class="mb-3">
   <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 </div>
 </section>
-<div class="item-fixed"><img src="imagenes/whatsapp-logo-11.png" width="50px" height="50px" alt="whatsapp logo png"><a href=""></a></div>
+<!-- Whatsapp mensaje -->
+<div class="item-fixed"><img src="imagenes/whatsapp-logo-11.png" width="50px" height="50px" alt="whatsapp logo png" ></div>
 
 
 <!-- Footer con informacion de redes sociales -->
@@ -245,10 +261,10 @@ in exercitationem, non deserunt fugiat est?</div>
 
     <ul class="nav col-md-4 justify-content-end ">
       <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Mail</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Intagram</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Facebook</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Linkedin</a></li>
     </ul>
   </footer>
 </div>
@@ -263,8 +279,10 @@ in exercitationem, non deserunt fugiat est?</div>
 
 
 
-
-  
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </html>

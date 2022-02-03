@@ -12,6 +12,15 @@
     --style-titulos: italic;
 }
 
+/* Ajustes responsive */
+@media screen and (max-width:475px) {
+.h2 {
+    font-size: 20px;
+}
+}
+
+
+
 header {
   background-color: black;
 }
@@ -29,7 +38,7 @@ li a:hover {
     float: right;
     background: linear-gradient(rgb(216, 83, 205), rgb(74, 180, 230));
     height: auto;
-    padding: 10px;
+    padding: 5px;
 }
 .texto-titulo {
     color: white;
@@ -43,11 +52,16 @@ li a:hover {
 .img-text-container {
     display: flex;
 }
-@media screen and (max-width:648px) {
+
+@media screen and (max-width:731px) {
     .imagen-papa {
         display: none;
     }
+   
 }
+
+
+
 .texto-descripcion {
     padding: 10px;
     font-size: var(--size-textos);
@@ -84,6 +98,25 @@ display: flex;
 .black {
     color: black;
 }
+.img-zona {
+    width:300px;
+     height:300px;
+
+}
+
+.flex-container :hover {
+    transform: scale(1.1);
+    transition: all 2s;
+}
+
+
+
+
+
+
+
+
+
 /* Logistica */
 #logistica {
     background-color: white;
